@@ -26,11 +26,11 @@ class SectionBottom extends React.Component {
                 </div >
                 <div className = ' section__bottom--article w-100'>
                     <div className = 'row'>
-                        <div className = 'col-12 col-md-4'>
+                        <div className = 'col-12 col-lg-4'>
                             <img src = {Bianka} className = 'img-fluid' alt = ''></img>
                         
                         </div>
-                        <div className = 'col-12 col-md-8 d-flex flex-column justify-content-center'>
+                        <div className = 'col-12 col-lg-8 d-flex flex-column justify-content-center'>
                             <p className = 'article--title mt-2'>
                                 {articles[0].bianka.title}                                
                             </p>
