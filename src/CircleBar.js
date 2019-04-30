@@ -28,9 +28,9 @@ class CircleBar extends React.Component {
         })
     }
         
-    componentWillUnmount(){
-        window.removeEventListener('scroll')
-    }
+    // componentWillUnmount(){
+    //     window.removeEventListener('scroll')
+    // }
 
     render() {
 

@@ -1,4 +1,14 @@
 $color: #1d70a2;
+$color2: #cc0026;
+$color3: #212529;
+
+body {
+    font-size: 1.3rem !important;
+    @media (min-width: 992px) {
+        font-size: 1rem !important;
+    }
+}
+
 .App-header {
     p {
         display: inline-block;
@@ -13,7 +23,7 @@ $color: #1d70a2;
 }
 
 .dropdown-toggle {
-    color: #cc0026 !important;
+    color: $color2 !important;
     font-weight: bold;
 }
 
@@ -220,7 +230,11 @@ $color: #1d70a2;
         display: inline-block;
 
         li {
+            margin-left: 0.5rem;
             display: inline-block;
+            a {
+                color: $color3;
+            }
         }
     }
     p {

@@ -1,4 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import {
+  HashRouter,
+  Route,
+  Link,
+  Switch,
+  NavLink,
+} from 'react-router-dom';
 
 class Navbar extends React.Component {
     
@@ -24,7 +32,8 @@ class Navbar extends React.Component {
                                 WHAT WE DO
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a className="dropdown-item" href="#">IT FRO SHE</a>
+                                    <Link className = 'dropdown-item' to = '/ItForShe' >IT FOR SHE</Link>
+                                    {/* <a className="dropdown-item" href="#">IT FRO SHE</a> */}
                                     <a className="dropdown-item" href="#">DZIEWCZYNY NA POLITECHNIKI</a>
                                     <a className="dropdown-item" href="#">STEM</a>
                                 </div>
