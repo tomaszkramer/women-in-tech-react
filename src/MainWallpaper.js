@@ -1,9 +1,10 @@
 import React from 'react';
-import Background from './img/glowa.jpg';
+// import Background from './img/glowa.jpg';
 
 
 class MainWallpaper extends React.Component {
     state = {
+        imgPathBg: './img/',
         imgPath: './img/subsites/',
         style : {
             zIndex: '-10'
@@ -14,8 +15,8 @@ class MainWallpaper extends React.Component {
         
         return (
             <div className = "container-fluid p-0">
-            <img src = {Background} className = 'img-fluid' style = {this.state.style} alt =""/>
-            <div className = "wallpaper__logos">
+            <img src = {require(`${this.state.imgPathBg}${this.props.srcBg}`)} className = 'img-fluid' style = {this.state.style} alt =""/>
+            <div className = {this.props.className}>
             <img className = "img-fluid" src = {require(`${this.state.imgPath}${this.props.src1}`)} alt =""/>
             <img className = "img-fluid" src = {require(`${this.state.imgPath}${this.props.src2}`)} alt =""/>
             

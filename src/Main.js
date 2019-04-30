@@ -41,6 +41,8 @@ class Main extends Component {
           <MainWallpaper
             src1 = 'wit/logo_glowne.png'
             src2 = 'wit/haslo-na-glownego-heada.png'
+            srcBg = 'glowa.jpg'
+            className = 'wallpaper__logos--straight'
           />
         </header>
         <section className = 'container-fluid'>

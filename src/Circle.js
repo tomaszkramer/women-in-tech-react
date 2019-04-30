@@ -7,6 +7,11 @@ class Circle extends React.Component {
             boxShadow: `0 0 5px 5px ${this.props.boxShadow}`,
             color: this.props.color,
         },
+        fontFormat: {
+            fontSize: this.props.fontSize,
+            color: this.props.textColor,
+        },
+        
     }
     render() {
         return(
@@ -17,7 +22,7 @@ class Circle extends React.Component {
                     separator = ' '
                 />
                 </p>
-                <p className = 'circle--text'>{this.props.text}</p>
+                <p className = 'circle--text' style = {this.state.fontFormat}>{this.props.text}</p>
                 
             </div>
         )

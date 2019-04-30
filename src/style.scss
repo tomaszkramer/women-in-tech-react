@@ -66,7 +66,7 @@ body {
      overflow: hidden;
  }
 
-.wallpaper__logos {
+.wallpaper__logos--straight {
     position: absolute;
     width: 25%;
     top: 5rem;
@@ -74,6 +74,17 @@ body {
     @media (min-width: 992px) {
         top: 9rem;
         right: 8rem;
+    }
+}
+
+.wallpaper__logos--reverse {
+    position: absolute;
+    width: 25%;
+    top: 4rem;
+    left: 4rem;
+    @media (min-width: 992px) {
+        top: 9rem;
+        left: 8rem;
     }
 }
 
@@ -178,6 +189,13 @@ body {
 .article__right--img {
     height: 100% !important;
     object-fit: cover;
+}
+
+.article__48--itfs {
+    &--img {
+        object-fit: contain;
+    }
+    
 }
 
 .section__bottom {

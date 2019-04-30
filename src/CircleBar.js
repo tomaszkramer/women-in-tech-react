@@ -43,6 +43,8 @@ class CircleBar extends React.Component {
                             text = {this.props.text1}
                             boxShadow = {this.props.boxShadow1}
                             color = {this.props.color1}
+                            fontSize = {this.props.fontSize1}
+                            textColor = {this.props.textColor1}
                         />
                     </div>
                     <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
@@ -51,6 +53,8 @@ class CircleBar extends React.Component {
                             text = {this.props.text2}
                             boxShadow = {this.props.boxShadow2}
                             color = {this.props.color2}
+                            fontSize = {this.props.fontSize2}
+                            textColor = {this.props.textColor2}
                         />
                     </div>
                     <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
@@ -59,6 +63,8 @@ class CircleBar extends React.Component {
                             text = {this.props.text3}
                             boxShadow = {this.props.boxShadow3}
                             color = {this.props.color3}
+                            fontSize = {this.props.fontSize3}
+                            textColor = {this.props.textColor3}
                         />
                     </div>
                     <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
@@ -67,6 +73,8 @@ class CircleBar extends React.Component {
                             text = {this.props.text4}
                             boxShadow = {this.props.boxShadow4}
                             color = {this.props.color4}
+                            fontSize = {this.props.fontSize4}
+                            textColor = {this.props.textColor4}
                         />
                     </div>
                 </div>        

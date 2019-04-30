@@ -22,6 +22,11 @@
             "par1" : "CEO Perspektywy Women in Tech / CEO Fundacji Edukacyjnej Perspektywy",
             "par2" : "Dr Bianka Siwińska jest dziennikarką, naukowczynią i inicjatorką kampanii społecznych. Jest dyrektorem zarządzającym Fundacji Edukacyjnej Perspektywy, redaktor naczelną magazynu edukacyjnego „Perspektywy” oraz korespondentką „University World News”.",
             "par3" : "Dr Siwińska jest inicjatorką kampanii społecznej „Dziewczyny na politechniki” i Akademii Startupowej dla studentek kierunków technicznych i ścisłych oraz takich projektów jak „Lean in STEM”, „IT for SHE”. „Dziewczyny do nauki!” i stypendiów dla studentek politechnik „Nowe technologie dla dziewczyn” (z Intel)."
+        },
+        "itforshe" : {
+            "title" : "",
+            "par1" : "Tylko 13% studentów informatyki w Polsce to kobiety. w korporacjach technologicznych jest ich jeszcze mniej. Niedobór specjalistów z zakresu nowych technologii już teraz szacuje się w Polsce na 50 000, a w Europie, do roku 2020 niedobór ten wyniesie 1 milion. Wprowadzenie większej liczby kobiet na rynek pracy w informatyce może powiększyć europejski PKB o 9 miliardów Euro rocznie.",
+            "par2" : "IT for SHE to program dla dziewczyn pełnych pasji dla technologii, programowania i informatyki. Został uznany za najlepsze działanie dla kobiet w technologiach w Europie i otrzymał od Komisji Europejskiej European Digital Skills Awards. Składa sie on z trzech filarów:"
         }
      }]
 }

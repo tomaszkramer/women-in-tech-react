@@ -17,8 +17,8 @@ class BottomBar extends React.Component {
 
     render () {
         return <div>
-                    <footer class="container-fluid">
-                        <div class="footer__icons d-flex flex-wrap justify-content-center align-items-center py-4 ">
+                    <footer className="container-fluid">
+                        <div className="footer__icons d-flex flex-wrap justify-content-center align-items-center py-4 ">
                             <a href="#">
                                 <img src= {pasek1} alt=""></img>
                             </a>
@@ -41,7 +41,7 @@ class BottomBar extends React.Component {
                                 <img src= {pasek7} alt=""></img>
                             </a>
                         </div>
-                        <div class="footer__menu">
+                        <div className="footer__menu">
                             <p>© Perspektywy.pl</p>
                             <ul>
                                 <li>
