@@ -4,6 +4,7 @@ import BottomBar from '../BottomBar';
 import MainWallpaper from '../MainWallpaper';
 import CircleBar from '../CircleBar';
 import SectionName from '../SectionName';
+import ChartJs from '../ChartJs';
 import Article48 from '../Article48';
 import {articles} from '../articles.json';
 
@@ -44,6 +45,9 @@ class ItForShe extends React.Component {
                     src = 'it_for_she/logo-It-for-she.png'
                     className = 'row my-4'
                 />
+            </section>
+            <section>
+                <ChartJs/>
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
             <section>
