@@ -268,12 +268,29 @@ body {
 .trapezoidRight {
     &--article {
         background: #e6e7eb;
+        > div div {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+    &--title {
+        padding: 15px;
+        display: inline-block;
+        color: white;
+        background: $color2;
+        font-weight: bolder;
     }
     &--text {
+        left: 2rem;
+        top: -1rem;
         position: absolute;
         font-size: 4rem;
         font-weight: bold;
         z-index: 1;
+        @media (min-width: 992px) {
+            top: 1rem;
+            left: -5rem;
+        }
     }
     &--trapezoid {
         display: none;
@@ -283,6 +300,16 @@ body {
         object-fit: cover;
         @media (min-width: 992px) {
             display: inline;
+        }
+    }
+    &--frame {
+        display: none;
+        @media (min-width: 992px) {
+            display: inline;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }

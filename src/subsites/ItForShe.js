@@ -57,10 +57,14 @@ class ItForShe extends React.Component {
                 art = {articles[0].program_mentoringowy}
                 srcImg = 'it_for_she/it_fot1.png'
                 srcElement = 'trapezoid.png'
+                srcFrame = 'it_for_she/it_trapez_1.png'
                 classColRight = 'col-12 col-lg-5 px-0 position-relative trapezoidRight--article'
                 classColLeft = 'col-12 col-lg-7 px-0'
+                srcTitle = 'it_for_she/mentore-mentee-it.png'
+                classArticleTitle = 'trapezoidRight--title'
                 classElementText = 'trapezoidRight--text'
                 classImgElement = 'trapezoidRight--trapezoid'
+                classImgFrame = 'trapezoidRight--frame'
                />
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
