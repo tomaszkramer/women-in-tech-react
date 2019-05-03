@@ -13,6 +13,7 @@ class Circle extends React.Component {
         },
         
     }
+
     render() {
         return(
             <div className = 'circle d-flex flex-column justify-content-center text-center m-3' style = {this.state.style}>

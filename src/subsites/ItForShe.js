@@ -6,6 +6,7 @@ import CircleBar from '../CircleBar';
 import SectionName from '../SectionName';
 import ChartJs from '../ChartJs';
 import Article48 from '../Article48';
+import ArticleTrapezoidRight from '../ArticleTrapezoidRight';
 import {articles} from '../articles.json';
 
 
@@ -48,6 +49,19 @@ class ItForShe extends React.Component {
             </section>
             <section>
                 <ChartJs/>
+            </section>
+            <section>
+                <SectionName name = 'TRZY DROGI UCZESTNICTWA'/>
+               <ArticleTrapezoidRight
+                text = "#1"
+                art = {articles[0].program_mentoringowy}
+                srcImg = 'it_for_she/it_fot1.png'
+                srcElement = 'trapezoid.png'
+                classColRight = 'col-12 col-lg-5 px-0 position-relative trapezoidRight--article'
+                classColLeft = 'col-12 col-lg-7 px-0'
+                classElementText = 'trapezoidRight--text'
+                classImgElement = 'trapezoidRight--trapezoid'
+               />
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
             <section>

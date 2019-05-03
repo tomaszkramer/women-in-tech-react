@@ -15,7 +15,7 @@ class MainWallpaper extends React.Component {
         
         return (
             <div className = "container-fluid p-0">
-            <img src = {require(`${this.state.imgPathBg}${this.props.srcBg}`)} className = 'img-fluid' style = {this.state.style} alt =""/>
+            <img src = {require(`${this.state.imgPathBg}${this.props.srcBg}`)} className = 'w-100' style = {this.state.style} alt =""/>
             <div className = {this.props.className}>
             <img className = "img-fluid" src = {require(`${this.state.imgPath}${this.props.src1}`)} alt =""/>
             <img className = "img-fluid" src = {require(`${this.state.imgPath}${this.props.src2}`)} alt =""/>

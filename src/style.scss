@@ -264,3 +264,26 @@ body {
         display: inline-block;
     }
 }
+
+.trapezoidRight {
+    &--article {
+        background: #e6e7eb;
+    }
+    &--text {
+        position: absolute;
+        font-size: 4rem;
+        font-weight: bold;
+        z-index: 1;
+    }
+    &--trapezoid {
+        display: none;
+        position: absolute;
+        right: -5rem;
+        height: 100%;
+        object-fit: cover;
+        @media (min-width: 992px) {
+            display: inline;
+        }
+    }
+}
+

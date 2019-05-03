@@ -27,6 +27,11 @@
             "title" : "",
             "par1" : "Tylko 13% studentów informatyki w Polsce to kobiety. w korporacjach technologicznych jest ich jeszcze mniej. Niedobór specjalistów z zakresu nowych technologii już teraz szacuje się w Polsce na 50 000, a w Europie, do roku 2020 niedobór ten wyniesie 1 milion. Wprowadzenie większej liczby kobiet na rynek pracy w informatyce może powiększyć europejski PKB o 9 miliardów Euro rocznie.",
             "par2" : "IT for SHE to program dla dziewczyn pełnych pasji dla technologii, programowania i informatyki. Został uznany za najlepsze działanie dla kobiet w technologiach w Europie i otrzymał od Komisji Europejskiej European Digital Skills Awards. Składa sie on z trzech filarów:"
+        },
+
+        "program_mentoringowy" : {
+            "title" : "",
+            "par1" : "W jego ramach zapraszamy studentki kierunków informatycznych do aplikownia, by znaleźć się pod opieką mentorki lub mentora z czołowych firm technologicznych. We współpracy z nimi będziecie rozwijać swój potencjał, wiedzę z zakresu programowania i zarządzania, a także realizować ambitne projekty technologiczne. Dostępni są mentorzy z takich firm jak: Citi, Google, Facebook, Intel, Ericsson, Goldman Sachs, P&G, RBS i Tomtom. "
         }
      }]
 }

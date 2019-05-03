@@ -68,6 +68,7 @@ class ChartJs extends React.Component {
                 ref = {(reference) => this.chartReference = reference}
                 options = {{
                     responsive: true,
+                    maintainAspectRatio: true,
                     title : {
                         display: true,
                         text: 'Akcja IT for She w liczbach',
@@ -127,8 +128,8 @@ class ChartJs extends React.Component {
                                 labelString: 'liczba eventów', 
                             },
                             ticks : {
-                                beginAtZero: true,
-                                // min: 5,
+                                // beginAtZero: true,
+                                min: 5,
                             }
                         }]
                     },
