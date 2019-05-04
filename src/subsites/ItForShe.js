@@ -8,6 +8,7 @@ import ChartJs from '../ChartJs';
 import Article48 from '../Article48';
 import ArticleTrapezoidRight from '../ArticleTrapezoidRight';
 import ArticleTrapezoidLeft from '../ArticleTrapezoidLeft';
+import ArticleTransparentRight from '../ArticleTransparentRight';
 import {articles} from '../articles.json';
 
 
@@ -97,6 +98,16 @@ class ItForShe extends React.Component {
                 classImgFrame = 'trapezoidRight--frame'
                 classImgExtension = 'trapezoidRight--imgExtension'
                />
+               <ArticleTransparentRight
+                srcImg = 'it_for_she/it_fot4.png'
+                srcElement = 'trapezoid-white-06.png'
+                art = {articles[0].program_wolontariacki}
+                classColLeft = 'col-12 col-lg-7 px-0'
+                classColRight = 'col-12 col-lg-5 px-0 transparentRight--article'
+               />
+            </section>
+            <section>
+                <SectionName name = 'NASI PARTNERZY' />
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
             <section>

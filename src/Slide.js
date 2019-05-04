@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+  } from 'react-router-dom';
 
 class Slide extends React.Component {
     constructor (props) {
@@ -12,7 +19,7 @@ class Slide extends React.Component {
         return (
             <div>
                 <div>
-                    <a href="./dnp.html">
+                    <Link to = {this.props.link}>
                         <div className="box">
                             <div className="card">
                                 <div className="front">
@@ -25,11 +32,11 @@ class Slide extends React.Component {
                                             aby poznać<br></br>
                                             szczegóły
                                         </p>
-                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </Link>
+                </div>
             </div>
         )
     } 
