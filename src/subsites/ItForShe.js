@@ -7,6 +7,7 @@ import SectionName from '../SectionName';
 import ChartJs from '../ChartJs';
 import Article48 from '../Article48';
 import ArticleTrapezoidRight from '../ArticleTrapezoidRight';
+import ArticleTrapezoidLeft from '../ArticleTrapezoidLeft';
 import {articles} from '../articles.json';
 
 
@@ -65,6 +66,36 @@ class ItForShe extends React.Component {
                 classElementText = 'trapezoidRight--text'
                 classImgElement = 'trapezoidRight--trapezoid'
                 classImgFrame = 'trapezoidRight--frame'
+                classImgExtension = 'img-fluid'
+               />
+               <ArticleTrapezoidLeft 
+                text = '#2'
+                art = {articles[0].it_tech_camp}
+                srcImg = 'it_for_she/it_fot2.png'
+                srcElement = 'trapezoid-white.png'
+                srcFrame = 'it_for_she/it_trapez_2.png'
+                classColRight = 'col-12 col-lg-7 px-0 position-relative'
+                classColLeft = 'col-12 col-lg-5 px-0 trapezoidLeft--article'
+                srcTitle = 'it_for_she/mentore-mentee-it.png'
+                classArticleTitle = 'trapezoidLeft--title'
+                classElementText = 'trapezoidLeft--text'
+                classImgElement = 'trapezoidLeft--trapezoid'
+                classImgFrame = 'trapezoidLeft--frame'
+               />
+               <ArticleTrapezoidRight
+                text = "#3"
+                art = {articles[0].program_wolontariacki}
+                srcImg = 'it_for_she/it_fot3.png'
+                srcElement = 'trapezoid.png'
+                srcFrame = 'it_for_she/it_trapez_1.png'
+                classColRight = 'col-12 col-lg-5 px-0 position-relative trapezoidRight--article'
+                classColLeft = 'col-12 col-lg-7 px-0'
+                srcTitle = 'it_for_she/you-me-it.png'
+                classArticleTitle = 'trapezoidRight--title'
+                classElementText = 'trapezoidRight--text'
+                classImgElement = 'trapezoidRight--trapezoid'
+                classImgFrame = 'trapezoidRight--frame'
+                classImgExtension = 'trapezoidRight--imgExtension'
                />
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>

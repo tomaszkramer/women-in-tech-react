@@ -1,6 +1,6 @@
 import React from 'react'; 
 
-class ArticleTrapezoidRight extends React.Component {
+class ArticleTrapezoidLeft extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -36,12 +36,7 @@ class ArticleTrapezoidRight extends React.Component {
             <div className = 'container-fluid'>
                 <div className = 'row overflow-hidden'>
                     <div className = {this.props.classColLeft}>
-                        <img className = 'w-100' src = {require(`${this.state.imgPath}${this.props.srcImg}`)} alt = ''></img>
-                        <img className ={this.props.classImgElement} src = {require(`${this.state.imgElement}${this.props.srcElement}`)} alt =''></img>
-                        <img className = {this.props.classImgFrame} src = {require(`${this.state.imgPath}${this.props.srcFrame}`)} alt =''></img>
-                    </div>
-                    <div className = {this.props.classColRight}>
-                        <div className = 'position-relative px-2'>
+                    <div className = 'position-relative px-2'>
                             <div className = 'mt-4'>
                                 <h4 className = {this.props.classArticleTitle}>PROGRAM</h4>
                             </div>
@@ -50,13 +45,18 @@ class ArticleTrapezoidRight extends React.Component {
                             </div>
                             <div className = {this.props.classElementText}>{this.props.text}</div>
                             <div>
-                                <img className = {this.props.classImgExtension} src = {require(`${this.state.imgPath}${this.props.srcTitle}`)} alt = ''></img>
+                                <img className = 'img-fluid' src = {require(`${this.state.imgPath}${this.props.srcTitle}`)} alt = ''></img>
                             </div>
                         </div>
                         <p className = 'article--title px-2'>{this.state.title}</p>
                             {this.state.article.map(el=>{
-                            return <p className = 'px-2'>{el}</p>
+                            return <p className = 'px-2 text-right'>{el}</p>
                             })}
+                    </div>
+                    <div className = {this.props.classColRight}>
+                        <img className = 'w-100' src = {require(`${this.state.imgPath}${this.props.srcImg}`)} alt = ''></img>
+                        <img className ={this.props.classImgElement} src = {require(`${this.state.imgElement}${this.props.srcElement}`)} alt =''></img>
+                        <img className = {this.props.classImgFrame} src = {require(`${this.state.imgPath}${this.props.srcFrame}`)} alt =''></img>
                     </div>
                 </div>
             </div>
@@ -64,4 +64,4 @@ class ArticleTrapezoidRight extends React.Component {
     }
 }
 
-export default ArticleTrapezoidRight;
+export default ArticleTrapezoidLeft;
