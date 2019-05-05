@@ -35,10 +35,11 @@ class ArticleTransparentRight extends React.Component {
         return(
             <div className = 'container-fluid position-relative px-0'>
                 <img className = 'w-100' src = {require(`${this.state.imgPath}${this.props.srcImg}`)} alt = ''></img>
-                <img className ={this.props.classImgElement} src = {require(`${this.state.imgElement}${this.props.srcElement}`)} alt =''></img>
-                <div className = 'container-fluid position-absolute transparentRight--container'>
+                <div className = 'container-fluid transparentRight--container'>
                     <div className = 'row h-100'>
-                        <div className = {this.props.classColLeft}></div>
+                        <div className = {this.props.classColLeft}>
+                            <img className ={this.props.classImgElement} src = {require(`${this.state.imgElement}${this.props.srcElement}`)} alt =''></img>
+                        </div>
                         <div className = {this.props.classColRight}>
                             <div className = 'position-relative px-2'>
                                 <div className = 'mt-4'>

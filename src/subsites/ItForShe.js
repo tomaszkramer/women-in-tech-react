@@ -102,8 +102,9 @@ class ItForShe extends React.Component {
                 srcImg = 'it_for_she/it_fot4.png'
                 srcElement = 'trapezoid-white-06.png'
                 art = {articles[0].program_wolontariacki}
-                classColLeft = 'col-12 col-lg-7 px-0'
+                classColLeft = 'col-12 col-lg-7 px-0 position-relative'
                 classColRight = 'col-12 col-lg-5 px-0 transparentRight--article'
+                classImgElement = 'transparentRight--trapezoid'
                />
             </section>
             <section>

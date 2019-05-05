@@ -388,6 +388,7 @@ body {
         height: 100%;
         // background: #e6e7eb;
             @media (min-width: 992px) {
+                position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -404,12 +405,12 @@ body {
         font-weight: bolder;
     }
     &--text {
-        left: 2rem;
-        top: -1rem;
-        position: absolute;
-        font-size: 4rem;
-        font-weight: bold;
-        z-index: 1;
+        // left: 2rem;
+        // top: -1rem;
+        // position: absolute;
+        // font-size: 4rem;
+        // font-weight: bold;
+        // z-index: 1;
         @media (min-width: 992px) {
             top: 1rem;
             left: -5rem;
@@ -417,12 +418,11 @@ body {
     }
     &--trapezoid {
         display: none;
-        position: absolute;
-        right: -5rem;
-        height: 100%;
-        object-fit: cover;
         @media (min-width: 992px) {
             display: inline;
+            position: absolute;
+            right: 0;
+            height: 100%;
         }
     }
     &--frame {
