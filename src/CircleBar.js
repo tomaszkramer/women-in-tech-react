@@ -12,25 +12,27 @@ class CircleBar extends React.Component {
         }
     }
 
-    componentDidMount(){ 
-        window.addEventListener('scroll', () => {
-            let circleBar = document.querySelector('#circleBar');
-            let bounding = circleBar.getBoundingClientRect()
+    isInViewPort = () => {
+        let circleBar = document.querySelector('#circleBar');
+        let bounding = circleBar.getBoundingClientRect()
             
-            if(bounding.top <= 330) {
-                this.setState({
-                    number1: this.props.number1,
-                    number2: this.props.number2,
-                    number3: this.props.number3,
-                    number4: this.props.number4
+        if(bounding.top <= 330) {
+            this.setState({
+                number1: this.props.number1,
+                number2: this.props.number2,
+                number3: this.props.number3,
+                number4: this.props.number4
                 })
             } 
-        })
+    }
+
+    componentDidMount(){ 
+        window.addEventListener('scroll', this.isInViewPort)
     }
         
-    // componentWillUnmount(){
-    //     window.removeEventListener('scroll')
-    // }
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.isInViewPort)
+    }
 
     render() {
 

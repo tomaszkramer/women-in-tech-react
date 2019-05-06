@@ -9,7 +9,9 @@ import Article48 from '../Article48';
 import ArticleTrapezoidRight from '../ArticleTrapezoidRight';
 import ArticleTrapezoidLeft from '../ArticleTrapezoidLeft';
 import ArticleTransparentRight from '../ArticleTransparentRight';
+import Partners from '../Partners';
 import {articles} from '../articles.json';
+import ItForShePartners from '../ItForShePartners';
 
 
 class ItForShe extends React.Component {
@@ -109,6 +111,9 @@ class ItForShe extends React.Component {
             </section>
             <section>
                 <SectionName name = 'NASI PARTNERZY' />
+            </section>
+            <section>
+                <Partners data = {ItForShePartners}/>
             </section>
             <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
             <section>
