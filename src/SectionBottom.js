@@ -63,7 +63,7 @@ class SectionBottom extends React.Component {
                         </div>
                         </div>
                         <div>
-                        <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13058.063621190058!2d21.016965039369797!3d52.229206195457266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf399cb359b58e10b!2sPerspektywy+Press+Sp.+z+o.o.!5e0!3m2!1sen!2spl!4v1556610953946!5m2!1sen!2spl" width="100%" height="450" frameBorder="0" style={{border:0}} allowfullScreen></iframe>
+                        <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13058.063621190058!2d21.016965039369797!3d52.229206195457266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf399cb359b58e10b!2sPerspektywy+Press+Sp.+z+o.o.!5e0!3m2!1sen!2spl!4v1556610953946!5m2!1sen!2spl" width="100%" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                         </div>
                     </div>
                     

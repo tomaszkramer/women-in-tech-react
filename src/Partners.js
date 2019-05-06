@@ -18,7 +18,20 @@ class Partners extends React.Component {
 
     render () {
         return (
-            <div></div>
+            <div className = 'container'>
+                <div className = 'row'>
+                    {this.state.data.map(el=>{
+                        console.log(el.src);
+                        return <div className = 'col d-flex justify-content-center align-items-center'>
+                                <div className = 'partners--container text-center'>
+                                <a href = {el.href} target = '_blank' rel = 'noopener noreferrer'>
+                                    <img className = 'partners--img' src = {require(`${el.src}`)} alt = '' />
+                                </a>
+                                </div>
+                        </div>
+                    })}
+                </div>
+            </div>
         )
     }
 }
