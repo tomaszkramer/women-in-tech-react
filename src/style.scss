@@ -335,16 +335,29 @@ body {
 }
 
 .trapezoidLeft {
+    &--container {
+        @media (min-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            > div {
+                display: inline-block;
+                align-self: flex-end;
+            }
+        }
+    }
     &--article {
         // background: #e6e7eb;
         z-index: 1;
-        > div div {
-            display: flex;
-            flex-direction: row;
-            @media (min-width: 992px) {
-                flex-direction: row-reverse;
-            }
-        }
+        display: flex;
+        justify-content: flex-end;
+        // > div div {
+        //     display: flex;
+        //     flex-direction: row;
+        //     @media (min-width: 992px) {
+        //         flex-direction: row-reverse;
+        //     }
+        // }
     }
     &--title {
         padding: 15px;
@@ -363,7 +376,7 @@ body {
         z-index: 1;
         @media (min-width: 992px) {
             top: 1rem;
-            right: -5rem;
+            left: -5rem;
         }
     }
     &--trapezoid {
@@ -398,6 +411,7 @@ body {
                 top: 0;
                 left: 0;
                 right: 0;
+                width: 80%;
             }
         }
     &--article {

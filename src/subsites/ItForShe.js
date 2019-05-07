@@ -80,6 +80,7 @@ class ItForShe extends React.Component {
                 srcFrame = 'it_for_she/it_trapez_2.png'
                 classColRight = 'col-12 col-lg-7 px-0 position-relative'
                 classColLeft = 'col-12 col-lg-5 px-0 trapezoidLeft--article'
+                classArticleContainer = 'trapezoidLeft--container'
                 srcTitle = 'it_for_she/mentore-mentee-it.png'
                 classArticleTitle = 'trapezoidLeft--title'
                 classElementText = 'trapezoidLeft--text'
@@ -108,6 +109,7 @@ class ItForShe extends React.Component {
                 art = {articles[0].program_wolontariacki}
                 classColLeft = 'col-12 col-lg-7 px-0 position-relative'
                 classColRight = 'col-12 col-lg-5 px-0 transparentRight--article'
+                classArticleContainer = 'transparentRight--container'
                 classImgElement = 'transparentRight--trapezoid'
                />
             </section>

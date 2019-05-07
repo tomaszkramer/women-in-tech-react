@@ -41,15 +41,17 @@ class ArticleTransparentRight extends React.Component {
                             <img className ={this.props.classImgElement} src = {require(`${this.state.imgElement}${this.props.srcElement}`)} alt =''></img>
                         </div>
                         <div className = {this.props.classColRight}>
-                            <div className = 'position-relative px-2'>
-                                <div className = 'mt-4'>
-                                    <h4 className = {this.props.classArticleTitle}>IDEA</h4>
+                            <div className = {this.props.classArticleContainer}>
+                                <div className = 'position-relative px-2'>
+                                    <div className = 'mt-4'>
+                                        <h4 className = {this.props.classArticleTitle}>IDEA</h4>
+                                    </div>
                                 </div>
+                                <p className = 'article--title px-2'>{this.state.title}</p>
+                                    {this.state.article.map(el=>{
+                                    return <p className = 'px-2'>{el}</p>
+                                    })}
                             </div>
-                            <p className = 'article--title px-2'>{this.state.title}</p>
-                                {this.state.article.map(el=>{
-                                return <p className = 'px-2'>{el}</p>
-                                })}
                         </div>
                     </div>
                 </div>
