@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                                     <Link className = 'dropdown-item' to = '/ItForShe' >IT FOR SHE</Link>
                                     {/* <a className="dropdown-item" href="#">IT FRO SHE</a> */}
                                     <a className="dropdown-item" href="#">DZIEWCZYNY NA POLITECHNIKI</a>
-                                    <a className="dropdown-item" href="#">STEM</a>
+                                    <Link className="dropdown-item" to = '/LeanInStem'>LEAN IN STEM</Link>
                                 </div>
                             </li>
                             <li className="nav-item">

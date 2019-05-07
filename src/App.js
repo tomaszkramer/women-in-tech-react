@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Main from './Main';
 import ItForShe from './subsites/ItForShe';
+import LeanInStem from './subsites/LeanInStem';
 
 class App extends React.Component {
     render() {
@@ -16,6 +17,8 @@ class App extends React.Component {
             <div>
                 <Route exact path = '/' component = {Main} />
                 <Route path = '/ItForShe' component = {ItForShe} />
+                <Route path = '/LeanInStem' component = {LeanInStem} />
+
             </div>
         </HashRouter>
     }

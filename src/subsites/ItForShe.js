@@ -119,7 +119,6 @@ class ItForShe extends React.Component {
             <section>
                 <Partners data = {ItForShePartners}/>
             </section>
-            <div className = 'container position-relative text-center' style = {this.state.style}>Content will be available soon :-)</div>
             <section>
                 <BottomBar/>
             </section>

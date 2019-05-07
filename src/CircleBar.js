@@ -16,7 +16,7 @@ class CircleBar extends React.Component {
         let circleBar = document.querySelector('#circleBar');
         let bounding = circleBar.getBoundingClientRect()
             
-        if(bounding.top <= 330) {
+        if(bounding.top <= 330 && circleBar !== null) {
             this.setState({
                 number1: this.props.number1,
                 number2: this.props.number2,

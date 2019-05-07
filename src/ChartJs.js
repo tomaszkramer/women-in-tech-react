@@ -41,18 +41,20 @@ class ChartJs extends React.Component {
 
     isInViewPort = () => {
         let chartBar = document.querySelector('#chartBar');
-            let bounding = chartBar.getBoundingClientRect()
-            
-            if(bounding.top <= 330) {
-                this.setState({
-                    data : {
-                        datasets: [{
-                            data: [11,13,15,16,12,17, 15, 12, 14, 10, 11, 13, 15],
-                            // fill: false,
-                        }]
-                    }
-                })
-            } 
+
+            if (chartBar !== null) {
+                let bounding = chartBar.getBoundingClientRect()
+                if(bounding.top <= 330 && chartBar !== null) {
+                    this.setState({
+                        data : {
+                            datasets: [{
+                                data: [11,13,15,16,12,17, 15, 12, 14, 10, 11, 13, 15],
+                                // fill: false,
+                            }]
+                        }
+                    })
+                } 
+            }
     }
 
     chartReference = {};
