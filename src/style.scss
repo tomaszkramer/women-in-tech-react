@@ -266,15 +266,21 @@ body {
 }
 
 .trapezoidRight {
+    &--container {
+        @media (min-width: 992px) {
+            width: 80%;
+        }
+    }
+
     &--article {
         background: #e6e7eb;
-        > div div {
-            display: flex;
-            flex-direction: row-reverse;
-            @media (min-width: 992px) {
-                flex-direction: row;
-            }
-        }
+        // > div div {
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        //     @media (min-width: 992px) {
+        //         flex-direction: row;
+        //     }
+        // }
     }
     &--title {
         padding: 15px;
@@ -284,7 +290,7 @@ body {
         font-weight: bolder;
     }
     &--text {
-        left: 2rem;
+        right: 2rem;
         top: -1rem;
         position: absolute;
         font-size: 4rem;

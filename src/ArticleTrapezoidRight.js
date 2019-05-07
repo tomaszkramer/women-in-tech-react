@@ -41,22 +41,24 @@ class ArticleTrapezoidRight extends React.Component {
                         <img className = {this.props.classImgFrame} src = {require(`${this.state.imgPath}${this.props.srcFrame}`)} alt =''></img>
                     </div>
                     <div className = {this.props.classColRight}>
-                        <div className = 'position-relative px-2'>
-                            <div className = 'mt-4'>
-                                <h4 className = {this.props.classArticleTitle}>PROGRAM</h4>
+                        <div className = {this.props.classArticleContainer}>
+                            <div className = 'position-relative px-2'>
+                                <div className = 'mt-4'>
+                                    <h4 className = {this.props.classArticleTitle}>PROGRAM</h4>
+                                </div>
+                                <div>
+                                    <h2 className = {this.props.classArticleTitle}>MENTORINGOWY</h2>
+                                </div>
+                                <div className = {this.props.classElementText}>{this.props.text}</div>
+                                <div>
+                                    <img className = {this.props.classImgExtension} src = {require(`${this.state.imgPath}${this.props.srcTitle}`)} alt = ''></img>
+                                </div>
                             </div>
-                            <div>
-                                <h2 className = {this.props.classArticleTitle}>MENTORINGOWY</h2>
-                            </div>
-                            <div className = {this.props.classElementText}>{this.props.text}</div>
-                            <div>
-                                <img className = {this.props.classImgExtension} src = {require(`${this.state.imgPath}${this.props.srcTitle}`)} alt = ''></img>
-                            </div>
-                        </div>
-                        <p className = 'article--title px-2'>{this.state.title}</p>
+                            <p className = 'article--title px-2'>{this.state.title}</p>
                             {this.state.article.map(el=>{
                             return <p className = 'px-2'>{el}</p>
                             })}
+                        </div>
                     </div>
                 </div>
             </div>
