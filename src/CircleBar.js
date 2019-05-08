@@ -39,7 +39,7 @@ class CircleBar extends React.Component {
         return (
             <div id = "circleBar" className = "container mt-4">
                 <div className = 'row'>
-                    <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
+                    <div className = 'col-12 col-lg-6 col-xl-3 d-flex justify-content-center'>
                         <Circle
                             number = {this.state.number1}
                             text = {this.props.text1}
@@ -49,7 +49,7 @@ class CircleBar extends React.Component {
                             textColor = {this.props.textColor1}
                         />
                     </div>
-                    <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
+                    <div className = 'col-12 col-lg-6 col-xl-3 d-flex justify-content-center'>
                         <Circle
                             number = {this.state.number2}
                             text = {this.props.text2}
@@ -59,7 +59,7 @@ class CircleBar extends React.Component {
                             textColor = {this.props.textColor2}
                         />
                     </div>
-                    <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
+                    <div className = 'col-12 col-lg-6 col-xl-3 d-flex justify-content-center'>
                         <Circle
                             number = {this.state.number3}
                             text = {this.props.text3}
@@ -69,7 +69,7 @@ class CircleBar extends React.Component {
                             textColor = {this.props.textColor3}
                         />
                     </div>
-                    <div className = 'col-12 col-md-6 col-lg-3 d-flex justify-content-center'>
+                    <div className = 'col-12 col-lg-6 col-xl-3 d-flex justify-content-center'>
                         <Circle
                             number = {this.state.number4}
                             text = {this.props.text4}

@@ -192,6 +192,24 @@ body {
     object-fit: cover;
 }
 
+.article__left {
+    &--frame {
+        background: #e6e7eb;
+    }
+    &--article {
+        display: flex;
+        @media (min-width: 992px) {
+            align-self: flex-end;
+            width: 80%;
+            text-align: right;
+        }
+    }
+    &--img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
 .article__48--itfs {
     &--img {
         object-fit: contain;
