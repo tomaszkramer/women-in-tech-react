@@ -19,7 +19,7 @@ class Partners extends React.Component {
     render () {
         return (
             <div className = 'container'>
-                <div className = 'row'>
+                <div className = 'row my-4'>
                     {this.state.data.map(el=>{
                         console.log(el.src);
                         return <div className = 'col d-flex justify-content-center align-items-center'>

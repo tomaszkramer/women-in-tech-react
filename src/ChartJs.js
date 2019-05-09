@@ -48,7 +48,7 @@ class ChartJs extends React.Component {
                     this.setState({
                         data : {
                             datasets: [{
-                                data: [11,13,15,16,12,17, 15, 12, 14, 10, 11, 13, 15],
+                                data: [11,13,15,16,12,17, 15, 12, 14, 10, 11, 13, 15, 18]
                                 // fill: false,
                             }]
                         }
@@ -73,7 +73,7 @@ class ChartJs extends React.Component {
                     maintainAspectRatio: true,
                     title : {
                         display: true,
-                        text: 'Akcja IT for She w liczbach',
+                        text: this.props.text,
                         fontSize: 35,
                         fontStyle: 'bold',
                     },
@@ -97,12 +97,12 @@ class ChartJs extends React.Component {
                         line: {
                             tension: 0.4,
                             borderWidth: 3,
-                            borderColor: '#df3245'
+                            borderColor: this.props.borderColor
                         },
                         point: {
                             pointStyle: 'circle',
                             borderWidth: 1,
-                            backgroundColor: '#df3245',
+                            backgroundColor: this.props.backgroundColor,
                             radius: '6'
                         },
                     },
@@ -131,7 +131,7 @@ class ChartJs extends React.Component {
                             },
                             ticks : {
                                 // beginAtZero: true,
-                                min: 5,
+                                min: parseInt(this.props.beginAt),
                             }
                         }]
                     },
@@ -140,7 +140,7 @@ class ChartJs extends React.Component {
                             display: true,
                             align: 'top',
                             offset: '8',
-                            color: '#df3245',
+                            color: this.props.datalabelColor,
                             font : {
                                 size: '20',
                                 weight: 'bold'

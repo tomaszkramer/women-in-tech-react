@@ -206,7 +206,7 @@ body {
     }
     &--img {
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -494,5 +494,31 @@ body {
     }
     &--img {
         max-width: 100%;
+    }
+}
+
+.articleFrameRight {
+    &--frame {
+        display: none;
+        @media (min-width: 992px) {
+            display: inline;
+            position: absolute;
+            top: -2rem;
+            left: -2rem;
+        }
+        
+    }
+}
+
+.articleFrameLeft {
+    &--frame {
+        display: none;
+        @media (min-width: 992px) {
+            display: inline;
+            position: absolute;
+            top: -2rem;
+            right: -2rem;
+        }
+        
     }
 }

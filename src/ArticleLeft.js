@@ -10,7 +10,7 @@ class ArticleLeft extends React.Component {
             article: [],
             className: this.props.className,
             style: {
-                borderBottom: "1px solid lightgrey"
+                // borderBottom: "1px solid lightgrey"
             }
         }
     }

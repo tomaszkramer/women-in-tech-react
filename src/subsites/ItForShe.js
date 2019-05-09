@@ -52,7 +52,13 @@ class ItForShe extends React.Component {
                 />
             </section>
             <section>
-                <ChartJs/>
+                <ChartJs
+                    text = 'nasze akcje w latach'
+                    borderColor = '#df3245'
+                    backgroundColor = '#df3245'
+                    beginAt = '10'
+                    datalabelColor = '#df3245'
+                />
             </section>
             <section>
                 <SectionName name = 'TRZY DROGI UCZESTNICTWA'/>
