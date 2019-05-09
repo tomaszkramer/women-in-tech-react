@@ -12,6 +12,7 @@ import BottomBar from '../BottomBar';
 import ChartJs from '../ChartJs';
 import StemPartners from '../StemPartners';
 import Partners from '../Partners';
+import ChartjsData from '../ChartjsData';
 
 class LeanInStem extends React.Component {
     constructor(props) {
@@ -57,8 +58,11 @@ class LeanInStem extends React.Component {
                         text = 'akcja Girls Go StartUP Academy w liczbach'
                         borderColor = '#5cb9be'
                         backgroundColor = '#5cb9be'
-                        beginAt = '10'
+                        beginAt = '12'
+                        endAt = '21'
                         datalabelColor = '#5cb9be'
+                        labels = {ChartjsData[0].leaninstem.labels}
+                        data = {ChartjsData[0].leaninstem.data}
                     />
                 </section>
                 <section>

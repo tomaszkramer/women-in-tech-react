@@ -12,6 +12,7 @@ import ArticleTransparentRight from '../ArticleTransparentRight';
 import Partners from '../Partners';
 import {articles} from '../articles.json';
 import ItForShePartners from '../ItForShePartners';
+import ChartjsData from '../ChartjsData';
 
 
 class ItForShe extends React.Component {
@@ -56,8 +57,11 @@ class ItForShe extends React.Component {
                     text = 'nasze akcje w latach'
                     borderColor = '#df3245'
                     backgroundColor = '#df3245'
-                    beginAt = '10'
+                    beginAt = '9'
+                    endAt = '18'
                     datalabelColor = '#df3245'
+                    labels = {ChartjsData[0].itforshe.labels}
+                    data = {ChartjsData[0].itforshe.data}
                 />
             </section>
             <section>

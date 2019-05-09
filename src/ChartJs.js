@@ -1,13 +1,14 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import ChartjsData from './ChartjsData'
 
 class ChartJs extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             data: {
-                labels : ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+                labels : this.props.labels,
                 datasets: [
                     {
                         // label: '',
@@ -48,7 +49,7 @@ class ChartJs extends React.Component {
                     this.setState({
                         data : {
                             datasets: [{
-                                data: [11,13,15,16,12,17, 15, 12, 14, 10, 11, 13, 15, 18]
+                                data: this.props.data
                                 // fill: false,
                             }]
                         }
@@ -60,7 +61,7 @@ class ChartJs extends React.Component {
     chartReference = {};
 
     componentDidMount() {
-        console.log(this.chartReference);
+        console.log(ChartjsData[0].itforshe.labels);
         window.addEventListener('scroll', this.isInViewPort)
     }
 
@@ -132,6 +133,7 @@ class ChartJs extends React.Component {
                             ticks : {
                                 // beginAtZero: true,
                                 min: parseInt(this.props.beginAt),
+                                max: parseInt(this.props.endAt)
                             }
                         }]
                     },

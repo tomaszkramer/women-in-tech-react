@@ -33,9 +33,9 @@ class Navbar extends React.Component {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <Link className = 'dropdown-item' to = '/ItForShe' >IT FOR SHE</Link>
-                                    {/* <a className="dropdown-item" href="#">IT FRO SHE</a> */}
-                                    <a className="dropdown-item" href="#">DZIEWCZYNY NA POLITECHNIKI</a>
+                                    {/* <a className="dropdown-item" href="#">DZIEWCZYNY NA POLITECHNIKI</a> */}
                                     <Link className="dropdown-item" to = '/LeanInStem'>LEAN IN STEM</Link>
+                                    <Link className ='dropdown-item' to ='/Dnp'>DZIEWCZYNY NA POLITECHNIKI</Link>
                                 </div>
                             </li>
                             <li className="nav-item">
