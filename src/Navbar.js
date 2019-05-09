@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import logo_glowne from './img/dnp-biale.png'
 import {
   HashRouter,
   Route,
@@ -14,7 +15,9 @@ class Navbar extends React.Component {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light flex-row-reverse">
-                    {/* <a className="navbar-brand" href="#">Navbar</a> */}
+                    <Link id = 'logo' className="navbar-brand hide" to ='/'>
+                        <img src = {logo_glowne} alt = ''></img>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -33,7 +36,6 @@ class Navbar extends React.Component {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <Link className = 'dropdown-item' to = '/ItForShe' >IT FOR SHE</Link>
-                                    {/* <a className="dropdown-item" href="#">DZIEWCZYNY NA POLITECHNIKI</a> */}
                                     <Link className="dropdown-item" to = '/LeanInStem'>LEAN IN STEM</Link>
                                     <Link className ='dropdown-item' to ='/Dnp'>DZIEWCZYNY NA POLITECHNIKI</Link>
                                 </div>

@@ -9,6 +9,29 @@ body {
     }
 }
 
+#logo {
+    &.show {
+        display: inline;
+        animation: show 1s forwards;
+    }
+
+    @keyframes show {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    };
+    &.hide {
+        animation: hide 0.5s forwards;
+    }
+
+    @keyframes hide {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
 .App-header {
     p {
         display: inline-block;
@@ -20,6 +43,21 @@ body {
     width: 100%;
     background: white;
     z-index: 10;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+    background: linear-gradient(#1d70a2, #b0c2ce);
+    box-shadow: lightgrey 2px 2px 4px 1px; 
+    width: 70px;
+    height: 70px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .dropdown-toggle {
