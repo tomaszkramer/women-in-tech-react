@@ -34,6 +34,7 @@ class ItForShe extends React.Component {
                 src1 = 'logo_glowne.png'
                 src2 = 'it_for_she/it-for-she.png'
                 className = 'wallpaper__logos--reverse'
+                logoBackground = '#9f1b28'
             />
             </div>
             <section>

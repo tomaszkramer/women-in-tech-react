@@ -29,6 +29,7 @@ class Dnp extends React.Component {
                     src1 = 'logo_glowne.png'
                     src2 = 'dnp/dziewczyny_na_politechniki.png'
                     className = 'wallpaper__logos--reverse'
+                    logoBackground = '#ec6f5d'
                 />
                 <section>
                     <CircleBar

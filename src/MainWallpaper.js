@@ -16,26 +16,12 @@ class MainWallpaper extends React.Component {
         }
     }
     
-    isInViewPort = () => {
-        let wallpaper = document.querySelector('#wallpaper');
-        let bounding = wallpaper.getBoundingClientRect()
-        let logo = document.querySelector('#logo')
-
-        if(bounding.bottom < 100 && wallpaper !== null) {
-            logo.className = this.state.logo.classNameShow;
-        } else {
-            logo.className = this.state.logo.classNameHide;
-        }
-    }
+   
 
     componentDidMount() {
-        window.addEventListener('scroll', this.isInViewPort)
+        let logo = document.querySelector('#logo')
+        logo.style.background = this.props.logoBackground;
     }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.isInViewPort)
-    }
-    
     render () {
         
         return (

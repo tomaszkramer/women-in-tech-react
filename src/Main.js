@@ -43,6 +43,7 @@ class Main extends Component {
             src2 = 'wit/haslo-na-glownego-heada.png'
             srcBg = 'glowa.jpg'
             className = 'wallpaper__logos--straight'
+            logoBackground = '#1d70a2'
           />
         </header>
         <section className = 'container-fluid'>

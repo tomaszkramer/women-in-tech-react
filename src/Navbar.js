@@ -15,7 +15,7 @@ class Navbar extends React.Component {
         return(
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light flex-row-reverse">
-                    <Link id = 'logo' className="navbar-brand hide" to ='/'>
+                    <Link id = 'logo' className="navbar-brand" to ='/'>
                         <img src = {logo_glowne} alt = ''></img>
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
