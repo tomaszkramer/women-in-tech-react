@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import MainWallpaper from '../MainWallpaper';
 import CircleBar from '../CircleBar';
 import SectionName from '../SectionName';
@@ -23,7 +22,6 @@ class Dnp extends React.Component {
     render() {
         return (
             <div>
-                <Navbar/>
                 <MainWallpaper 
                     srcBg = 'subsites/dnp/dnp_head.png'
                     src1 = 'logo_glowne.png'

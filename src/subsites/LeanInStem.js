@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import MainWallpaper from '../MainWallpaper';
 import CircleBar from '../CircleBar';
 import Article48 from '../Article48';
@@ -8,7 +7,6 @@ import ArticleFrameRight from '../ArticleFrameRight';
 import ArticleFrameLeft from '../ArticleFrameLeft';
 import SectionName from '../SectionName';
 import {articles} from '../articles.json';
-import BottomBar from '../BottomBar';
 import ChartJs from '../ChartJs';
 import StemPartners from '../StemPartners';
 import Partners from '../Partners';
@@ -30,7 +28,6 @@ class LeanInStem extends React.Component {
         return(
             <div>
                 <div>
-                  <Navbar/>
                   <MainWallpaper
                     srcBg = 'subsites/stem/stem_head.png'
                     src1 = 'logo_glowne.png'
@@ -97,9 +94,6 @@ class LeanInStem extends React.Component {
                 <section>
                     <SectionName name = 'OUR PARTNERS'/>
                     <Partners data = {StemPartners}/>
-                </section>
-                <section>
-                    <BottomBar/>
                 </section>
             </div>
         )

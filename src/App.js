@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './Navbar';
+import BottomBar from './BottomBar';
 import {
   HashRouter,
   Route,
@@ -15,12 +17,12 @@ import Dnp from './subsites/Dnp';
 class App extends React.Component {
     render() {
         return <HashRouter>
-            <div>
+                <Navbar/>
                 <Route exact path = '/' component = {Main} />
                 <Route path = '/ItForShe' component = {ItForShe} />
                 <Route path = '/LeanInStem' component = {LeanInStem} />
                 <Route path = '/Dnp' component = {Dnp} />
-            </div>
+                <BottomBar/>
         </HashRouter>
     }
 }

@@ -37,7 +37,6 @@ class Main extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Navbar/>,
           <MainWallpaper
             src1 = 'wit/logo_glowne.png'
             src2 = 'wit/haslo-na-glownego-heada.png'
@@ -101,7 +100,6 @@ class Main extends Component {
          {/* ---- Bianka i mapa ----- */}
          <section>
             <SectionBottom/>
-            <BottomBar/>
          </section>
       </div>
     );

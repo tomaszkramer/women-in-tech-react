@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import BottomBar from '../BottomBar';
 import MainWallpaper from '../MainWallpaper';
 import CircleBar from '../CircleBar';
 import SectionName from '../SectionName';
@@ -28,7 +26,6 @@ class ItForShe extends React.Component {
     render() {
         return <div>
             <div>
-            <Navbar/>
             <MainWallpaper
                 srcBg = 'subsites/it_for_she/itforshe_head.png'
                 src1 = 'logo_glowne.png'
@@ -129,9 +126,6 @@ class ItForShe extends React.Component {
             </section>
             <section>
                 <Partners data = {ItForShePartners}/>
-            </section>
-            <section>
-                <BottomBar/>
             </section>
         </div>
     }
