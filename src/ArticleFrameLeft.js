@@ -50,7 +50,7 @@ class ArticleFrameLeft extends React.Component {
                         </div>
                     </div>
                     <div className = {this.props.classColRight}>
-                        <img className = 'w-100' src = {require(`${this.state.imgPath}${this.props.srcImg}`)} alt = ''></img>
+                        <img className = 'w-100 h-100 articleFrameLeft--img' src = {require(`${this.state.imgPath}${this.props.srcImg}`)} alt = ''></img>
                         <img className = {this.props.classImgFrame} src = {require(`${this.state.imgPath}${this.props.srcFrame}`)} alt =''></img>
                     </div>
                 </div>

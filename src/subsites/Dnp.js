@@ -6,6 +6,10 @@ import Chartjs from '../ChartJs';
 import Article48 from '../Article48';
 import {articles} from '../articles.json';
 import ChartjsData from '../ChartjsData';
+import ArticleBackgroundImage from '../ArticleBackgroundImage';
+import ArticleFrameRight from '../ArticleFrameRight';
+import ArticleFrameLeft from '../ArticleFrameLeft';
+import Partners from '../Partners';
 
 class Dnp extends React.Component {
     constructor(props) {
@@ -18,6 +22,8 @@ class Dnp extends React.Component {
             }
         }
     }
+
+    
 
     render() {
         return (
@@ -56,9 +62,46 @@ class Dnp extends React.Component {
                          data = {ChartjsData[0].dnp.data}
                     />
                 </section>
-                <div style = {this.state.style}>
-                    Content will be available soon
-                </div>
+                <section className ='my-4'>
+                    <ArticleBackgroundImage 
+                        src = 'dnp/DNP---kable.jpg'
+                        art = {articles[0].article4}
+                    />
+                </section>
+                <section className = 'container my-4'>
+                    <ArticleFrameRight
+                        art = {articles[0].article4}
+                        srcImg = 'dnp/DNP---fot1.png'
+                        srcFrame = 'dnp/DNP---trapez1.png'
+                        classArticleContainer  = 'mx-2'
+                        classColRight = 'col-12 col-lg-5 px-0 d-flex flex-column justify-content-center'
+                        classColLeft = 'col-12 col-lg-7 px-0 position-relative'
+                        classImgFrame = 'articleFrameRight--frame'
+                    />
+                    <ArticleFrameLeft 
+                        art = {articles[0].article4}
+                        srcImg = 'dnp/DNP---fot2.png'
+                        srcFrame = 'dnp/DNP---trapez2.png'
+                        classArticleContainer = 'text-right mx-2'
+                        classColRight = 'col-12 col-lg-7 px-0 position-relative'
+                        classColLeft = 'col-12 col-lg-5 px-0 d-flex flex-column justify-content-center'
+                        classImgFrame = 'articleFrameLeft--frame'
+                    />
+                    <ArticleFrameRight
+                        art = {articles[0].article4}
+                        srcImg = 'dnp/DNP---fot3.png'
+                        srcFrame = 'dnp/DNP---trapez3.png'
+                        classArticleContainer  = 'mx-2'
+                        classColRight = 'col-12 col-lg-5 px-0 d-flex flex-column justify-content-center'
+                        classColLeft = 'col-12 col-lg-7 px-0 position-relative'
+                        classImgFrame = 'articleFrameRight--frame'
+                    />
+                </section>
+                <section>
+                    <SectionName name = 'OUR PARTNERS'/>
+                    {/* <Partners /> */}
+                </section>
+                
             </div>
         )
     }

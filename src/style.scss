@@ -524,6 +524,9 @@ body {
         }
         
     }
+    &--img {
+        object-fit: cover;
+    }
 }
 
 .articleFrameLeft {
@@ -536,5 +539,26 @@ body {
             right: -2rem;
         }
         
+    }
+    &--img {
+        object-fit: cover;
+    }
+}
+
+.articleBackgroundImage {
+    background-image: url('../src/img/subsites/dnp/DNP---kable.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &--container {
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        @media (min-width: 992px) {
+            width: 80%;
+        }
+    }
+    &--article {
+        color: white;
     }
 }
