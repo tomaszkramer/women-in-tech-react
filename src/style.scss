@@ -203,9 +203,22 @@ body {
     }
 }
 
-.article__right--img {
-    height: 100% !important;
+.article__right {
+    &--frame {
+        background: #e6e7eb;
+    }
+    &--article {
+        // display: flex;
+        @media (min-width: 992px) {
+            // align-self: flex-end;
+            width: 80%;
+            // text-align: right;
+    }
+}
+    &--img {
+    max-height: 100% !important;
     object-fit: cover;
+    }
 }
 
 .article__left {
@@ -221,7 +234,7 @@ body {
         }
     }
     &--img {
-        height: 100%;
+        max-height: 100%;
         object-fit: cover;
     }
 }
@@ -560,5 +573,10 @@ body {
     }
     &--article {
         color: white;
+    }
+}
+.iframe {
+    @media (max-width: 576px) {
+        max-width: 100% !important;
     }
 }

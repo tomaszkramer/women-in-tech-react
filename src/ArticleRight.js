@@ -35,9 +35,7 @@ class ArticleRight extends React.Component {
         })
        
     }
-
-    
-        
+ 
     render() {
         return (
             <div className = "pb-4" style = {this.state.style}>
@@ -45,10 +43,13 @@ class ArticleRight extends React.Component {
                 <div className = 'col-12 col-xl-6 d-flex flex-column justify-content-center'>
                    <img className = 'img-fluid article__right--img' src = {require(`${this.state.imgPath}${this.props.src}`)} alt = ''></img>
                 </div>
-                <div className = 'col-12 col-xl-6 d-flex flex-column justify-content-center'>
-                   {this.state.article.map(el=>{
-                       return <p>{el}</p>
-                   })}
+                <div className = 'col-12 col-xl-6 d-flex flex-column justify-content-center articleRight--frame'>
+                    <div className = 'article__right--article'>
+                        <h4>{this.state.art.title}</h4>
+                        {this.state.article.map(el=>{
+                            return <p className = 'px-2'>{el}</p>
+                        })}
+                    </div>
                 </div>
             </div>
             </div>

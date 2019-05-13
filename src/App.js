@@ -13,6 +13,7 @@ import Main from './Main';
 import ItForShe from './subsites/ItForShe';
 import LeanInStem from './subsites/LeanInStem';
 import Dnp from './subsites/Dnp';
+import Nt from './subsites/Nt';
 
 class App extends React.Component {
     render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
                 <Route path = '/ItForShe' component = {ItForShe} />
                 <Route path = '/LeanInStem' component = {LeanInStem} />
                 <Route path = '/Dnp' component = {Dnp} />
+                <Route path = '/Nt' component = {Nt} />
                 <BottomBar/>
         </HashRouter>
     }

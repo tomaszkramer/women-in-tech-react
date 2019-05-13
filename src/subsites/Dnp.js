@@ -10,6 +10,7 @@ import ArticleBackgroundImage from '../ArticleBackgroundImage';
 import ArticleFrameRight from '../ArticleFrameRight';
 import ArticleFrameLeft from '../ArticleFrameLeft';
 import Partners from '../Partners';
+import DnpPartners from '../DnpPartners';
 
 class Dnp extends React.Component {
     constructor(props) {
@@ -99,7 +100,7 @@ class Dnp extends React.Component {
                 </section>
                 <section>
                     <SectionName name = 'OUR PARTNERS'/>
-                    {/* <Partners /> */}
+                    <Partners data = {DnpPartners} />
                 </section>
                 
             </div>
