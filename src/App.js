@@ -14,6 +14,7 @@ import ItForShe from './subsites/ItForShe';
 import LeanInStem from './subsites/LeanInStem';
 import Dnp from './subsites/Dnp';
 import Nt from './subsites/Nt';
+import StartUp from './subsites/StartUp';
 
 class App extends React.Component {
     render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
                 <Route path = '/LeanInStem' component = {LeanInStem} />
                 <Route path = '/Dnp' component = {Dnp} />
                 <Route path = '/Nt' component = {Nt} />
+                <Route path = '/StartUp' component = {StartUp} />
                 <BottomBar/>
         </HashRouter>
     }

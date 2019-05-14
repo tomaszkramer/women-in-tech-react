@@ -72,7 +72,9 @@ class Nt extends React.Component {
                     />
                 </section>
                 <section className = 'container text-center my-4'>
-                    <iframe className = 'iframe' width="555" height="312" src="https://www.youtube.com/embed/Kvk02ECna8U" title = "new technologies for girls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title></iframe>
+                    <div className = 'videoWrapper'>
+                        <iframe className = 'iframe' width="555" height="312" src="https://www.youtube.com/embed/Kvk02ECna8U" title = "new technologies for girls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title></iframe>
+                    </div>
                 </section>
                 <section>
                     <SectionName name = 'OUR PARTNERS' />
