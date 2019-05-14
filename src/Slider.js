@@ -38,10 +38,10 @@ class SimpleSlider extends React.Component {
         return (
             <div className = 'slider'>
                 <Slider {...settings}>
-                    <Slide slideFront ='dnp.png' slideBack = 'dnp2.png'/>
+                    <Slide slideFront ='dnp.png' slideBack = 'dnp2.png' link = '/Dnp'/>
                     <Slide slideFront = 'itforshe.png' slideBack = 'itforshe2a.png' link = '/ItForShe' />
-                    <Slide slideFront = 'NT.png' slideBack = 'NT2.png'/>
-                    <Slide slideFront = 'startup.png' slideBack = 'startup2.png'/>
+                    <Slide slideFront = 'NT.png' slideBack = 'NT2.png' link = '/Nt'/>
+                    <Slide slideFront = 'startup.png' slideBack = 'startup2.png' link = '/StartUp'/>
                     <Slide slideFront = 'stem.png' slideBack = 'stem_2.png' link = '/LeanInStem' />
                     <Slide slideFront = 'summit.png' slideBack = 'summit2.png'/>
                 </Slider>

@@ -23,7 +23,7 @@ class Partners extends React.Component {
                     {this.state.data.map(el=>{
                         console.log(el.src);
                         return <div className = 'col d-flex justify-content-center align-items-center'>
-                                <div className = 'partners--container text-center'>
+                                <div className = 'partners--container text-center py-2' style = {{width: this.props.logoWidth}}>
                                 <a href = {el.href} target = '_blank' rel = 'noopener noreferrer'>
                                     <img className = 'partners--img' src = {require(`${el.src}`)} alt = '' />
                                 </a>

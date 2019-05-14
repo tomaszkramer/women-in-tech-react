@@ -70,6 +70,8 @@ class Main extends Component {
                 <ArticleRight art = {articles[0].article1}
                               src = 'wit/overview-dziecko-scaled.jpg'
                               className = 'row mx-0'
+                              imgHeight = '100%'
+                              articleWidth = '100%'
                 />
             </div>
          </section>

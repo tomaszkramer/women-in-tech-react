@@ -4,8 +4,11 @@ import CircleBar from '../CircleBar';
 import Article48 from '../Article48';
 import ChartJs from '../ChartJs';
 import ArticleRight from '../ArticleRight'
+import SectionName from '../SectionName';
+import Partners from '../Partners';
 import {articles} from '../articles.json'
 import ChartjsData from '../ChartjsData';
+import StartUpPartners from '../StartUpPartners';
 
 class StartUp extends React.Component {
     constructor(props){
@@ -59,6 +62,12 @@ class StartUp extends React.Component {
                     art = {articles[0].article3}
                     className = 'row mx-0 article__right--frame'
                    />
+                </section>
+                <section>
+                    <SectionName name = 'OUR PARTNERS' />
+                    <Partners data = {StartUpPartners}
+                              logoWidth = '300px'  
+                    />
                 </section>
             </div>
         )

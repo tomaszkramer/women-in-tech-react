@@ -78,7 +78,9 @@ class Nt extends React.Component {
                 </section>
                 <section>
                     <SectionName name = 'OUR PARTNERS' />
-                    <Partners data = {NtPartners}/>
+                    <Partners data = {NtPartners}
+                              logoWidth = '300px'  
+                    />
                 </section>
             </div>
         )
