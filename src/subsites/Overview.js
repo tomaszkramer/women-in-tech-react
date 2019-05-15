@@ -1,6 +1,11 @@
 import React from 'react';
 import MainWallpaper from '../MainWallpaper';
 import ArticleVideo from '../ArticleVideo';
+import ArticleBackgroundImageRight from '../ArticleBackgroundImageRight';
+import SectionName from '../SectionName';
+import TeamMember from '../TeamMember';
+import {articles} from '../articles.json';
+import teamMembers from '../OverviewTeamMembers';
 
 class Overview extends React.Component {
     constructor(props) {
@@ -23,10 +28,24 @@ class Overview extends React.Component {
                     />
                 </div>
                 <section className = 'container-fluid'>
-                    <ArticleVideo/>
+                    <ArticleVideo
+                        art = {articles[0].article2}
+                    />
                 </section>
                 <section>
-                    
+                    <ArticleBackgroundImageRight
+                        art = {articles[0].article4}
+                    />
+                </section>
+                <section>
+                    <SectionName name = 'TEAM' />
+                    <TeamMember
+                      imgSrc = 'overview/bianka2.png'
+                      name = 'Bianka Siwińska'
+                      title = 'CEO and Summit Director'
+                      email = 'b.siwinska@perspektywy.pl'
+                      tel = '501 535 785'
+                      />
                 </section>
             </div>
         )

@@ -576,6 +576,23 @@ body {
         color: white;
     }
 }
+.articleBackgroundImageRight {
+    background-image: url('../src/img/subsites/overview/overview-dziecko.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &--container {
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        @media (min-width: 992px) {
+            width: 80%;
+        }
+    }
+    &--article {
+        color: white;
+    }
+}
 .videoWrapper {
     position: relative;
     // padding-bottom: 56.25%;
@@ -639,5 +656,24 @@ body {
     }
     h2 {
         z-index: 10;
+    }
+}
+.overview {
+    &--teamFrame {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &--teamDescription {
+        h3 {
+            color: #74a6ed;
+        }
     }
 }
