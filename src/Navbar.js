@@ -1,15 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import logo_glowne from './img/dnp-biale.png'
 import {
-  HashRouter,
-  Route,
   Link,
-  Switch,
-  NavLink,
 } from 'react-router-dom';
 
 class Navbar extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            style : {
+                border: "none",
+                background: "none",
+            }
+        }
+    }
     
     render() {
         return(
@@ -23,17 +27,8 @@ class Navbar extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
-                            {/* <li className="nav-item active">
-                                <a className="nav-link" href="#">Who We Are<span className="sr-only">(current)</span></a>
-                            </li> */}
-                            
-                            {/* <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
-                            </li> */}
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                WHAT WE DO
-                                </a>
+                                <button className = "nav-link dropdown-toggle" id = "navbarDropdownMenuLink" type="button" data-toggle="dropdown" aria-haspopup = "true" aria-expanded="false" style = {this.state.style}>WHAT WE DO</button>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <Link className = 'dropdown-item' to = '/ItForShe' >IT FOR SHE</Link>
                                     <Link className="dropdown-item" to = '/LeanInStem'>LEAN IN STEM</Link>
@@ -43,10 +38,10 @@ class Navbar extends React.Component {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">OVERVIEW</a>
+                                <Link className="nav-link" to="/Overview">OVERVIEW</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="http://www.dziewczynynapolitechniki.pl/raport" target = "_blank">REPORTS</a>
+                                <a className="nav-link" href="http://www.dziewczynynapolitechniki.pl/raport" target = "_blank" rel="noopener noreferrer">REPORTS</a>
                             </li>
                         </ul>
                     </div>

@@ -596,3 +596,48 @@ body {
         
     }
 }
+.articleVideo {
+    &--backgroundContainer {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &--colLeft {
+        background: #74a6ed;
+    }
+    &--colMiddle {
+        display: none;
+        @media (min-width: 992px) {
+            display: block;
+            background: #dee3e6;
+        }
+    }
+    &--colRight {
+        background: #dee3e6;
+    }
+    &--videoFrame {
+        @media (min-width: 992px) {
+            left: 8rem;
+            z-index: 1;
+        }
+    }
+    &--videoWrapper {
+        position: relative;
+    padding: 25px 0 56.25% 0;
+    height: 0;
+    @media (min-width: 992px) {
+        margin: 0 auto;
+        padding-bottom: 51.9%;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+    }
+    h2 {
+        z-index: 10;
+    }
+}

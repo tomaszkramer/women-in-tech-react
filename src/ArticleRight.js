@@ -1,5 +1,4 @@
 import React from 'react';
-import {articles} from './articles.json';
 
 class ArticleRight extends React.Component {
     constructor(props) {

@@ -1,12 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import {
-  HashRouter,
-  Route,
-  Link,
-  Switch,
-  NavLink,
-} from 'react-router-dom';
 import './App.scss';
 import '../src/style.scss';
 import '../src/fonts.scss';
@@ -17,16 +9,13 @@ import "../node_modules/slick-carousel/slick/slick.css";
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 import {articles} from './articles.json';
 import CircleBar from './CircleBar';
-import Navbar from './Navbar';
 import MainWallpaper from './MainWallpaper';
 import SectionName from './SectionName';
 import SimpleSlider from './Slider';
 import ArticleRight from './ArticleRight';
 import Article from './Article';
 import SectionBottom from './SectionBottom';
-import BottomBar from './BottomBar';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faGlobeEurope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
  
 
@@ -68,7 +57,7 @@ class Main extends Component {
             <SectionName name = 'MISJA'/>
             <div className = 'container'>
                 <ArticleRight art = {articles[0].article1}
-                              src = 'wit/overview-dziecko-scaled.jpg'
+                              src = 'main/news_1.png'
                               className = 'row mx-0'
                               imgHeight = '100%'
                               articleWidth = '100%'

@@ -33,6 +33,7 @@ class LeanInStem extends React.Component {
                     src1 = 'logo_glowne.png'
                     src2 = 'stem/lean_in_stem.png'
                     className = 'wallpaper__logos--reverse'
+                    logoBackground = '#5eb9bc'
                     />
                 </div>
                 <section>
