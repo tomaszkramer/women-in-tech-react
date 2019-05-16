@@ -4,7 +4,7 @@ class TeamMember extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            imgPath: './img/subsites/',
+            imgPath: './img/',
             imgSrc: this.props.imgSrc,
         }
     }

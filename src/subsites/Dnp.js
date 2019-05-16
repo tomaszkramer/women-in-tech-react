@@ -11,6 +11,7 @@ import ArticleFrameRight from '../ArticleFrameRight';
 import ArticleFrameLeft from '../ArticleFrameLeft';
 import Partners from '../Partners';
 import DnpPartners from '../DnpPartners';
+import background from '../img/subsites/dnp/DNP---kable.jpg'
 
 class Dnp extends React.Component {
     constructor(props) {
@@ -20,11 +21,16 @@ class Dnp extends React.Component {
                 fontSize: '4rem',
             fontFamily : 'TravelingTypewriter',
             textAlign : 'center'
-            }
+            },
+            background : background,
         }
     }
 
-    
+    componentDidMount () {
+        this.setState({
+            background : background,
+        })
+    }
 
     render() {
         return (
@@ -67,6 +73,8 @@ class Dnp extends React.Component {
                     <ArticleBackgroundImage 
                         src = 'dnp/DNP---kable.jpg'
                         art = {articles[0].article4}
+                        backgroundImage = {this.state.background}
+                        color = 'white'
                     />
                 </section>
                 <section className = 'container my-4'>

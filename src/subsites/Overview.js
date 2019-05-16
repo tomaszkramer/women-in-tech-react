@@ -4,15 +4,23 @@ import ArticleVideo from '../ArticleVideo';
 import ArticleBackgroundImageRight from '../ArticleBackgroundImageRight';
 import SectionName from '../SectionName';
 import TeamMember from '../TeamMember';
+import TeamMembers from '../TeamMembers';
+import ArticleBackgroundImage from '../ArticleBackgroundImage';
 import {articles} from '../articles.json';
-import teamMembers from '../OverviewTeamMembers';
+import background from '../img/subsites/overview/puchar.jpg';
 
 class Overview extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            
+            background: background,
         }
+    }
+
+    componentDidMount () {
+        this.setState({
+            background : background,
+        })
     }
 
     render() {
@@ -37,15 +45,22 @@ class Overview extends React.Component {
                         art = {articles[0].article4}
                     />
                 </section>
-                <section>
+                <section className = 'container-fluid'>
                     <SectionName name = 'TEAM' />
                     <TeamMember
-                      imgSrc = 'overview/bianka2.png'
+                      imgSrc = 'subsites/overview/bianka2.png'
                       name = 'Bianka Siwińska'
                       title = 'CEO and Summit Director'
                       email = 'b.siwinska@perspektywy.pl'
                       tel = '501 535 785'
                       />
+                      <TeamMembers />
+                </section>
+                <section>
+                    <ArticleBackgroundImage
+                        art = {articles[0].article4}
+                        backgroundImage = {this.state.background}
+                    />
                 </section>
             </div>
         )

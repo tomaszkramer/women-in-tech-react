@@ -1,4 +1,5 @@
 import React from "react";
+// import background from './img/subsites/overview/puchar.jpg'
 
 class ArticleBackgroundImage extends React.Component {
     constructor(props) {
@@ -8,12 +9,16 @@ class ArticleBackgroundImage extends React.Component {
             art: '',
             article: [],
             className: this.props.className,
+            backgroundImage : '',
+            color: ''
         }
     }
 
     componentWillMount(){
         this.setState({
-            art: this.props.art
+            art: this.props.art,
+            backgroundImage : this.props.backgroundImage,
+            color: this.props.color,
         })
     }
     
@@ -31,16 +36,17 @@ class ArticleBackgroundImage extends React.Component {
         
         this.setState({
             article: myArt,
+            backgroundImage: this.props.backgroundImage,
         })
     }
 
     render() {
         
         return (
-            <div className = 'container-fluid d-flex justify-content-center articleBackgroundImage'>
+            <div className = 'container-fluid d-flex justify-content-center articleBackgroundImage'style = {{backgroundImage: "url("+this.state.backgroundImage+")"}}>
                 {/* <img className = 'img-fluid' src = {require(`${this.state.imgPath}${this.props.src}`)} alt = ''></img> */}
                     <div className = 'row py-4 articleBackgroundImage--container'>
-                        <div className = 'col-12 col-lg-6 articleBackgroundImage--article'>
+                        <div className = 'col-12 col-lg-6' style = {{color: this.state.color}}>
                             <div className = ''>
                                 <h2>{this.state.art.title}</h2>
                                 {this.state.article.map(el=>{

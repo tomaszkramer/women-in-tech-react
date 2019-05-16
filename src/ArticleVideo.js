@@ -42,7 +42,7 @@ class ArticleVideo extends React.Component {
                             <div className = 'position-relative articleVideo--videoFrame'>
                                 <h2 className = 'mt-4 mb-4'>OVERVIEW</h2>
                                 <div className = 'articleVideo--videoWrapper'>
-                                    <iframe width="560" height="315" title = 'women summit' src="https://www.youtube.com/embed/WlpT94VglUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" title = 'women summit' src="https://www.youtube.com/embed/WlpT94VglUA" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
                             </div>
                         </div>
