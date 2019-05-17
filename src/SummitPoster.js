@@ -24,7 +24,7 @@ class SummitPoster extends React.Component {
                         <span className = 'summitPoster--span3'>THE</span>
                         <span className = 'summitPoster--span4'>FUTURE </span>
                     </div>
-                    <div><span>13-14 NOVEMBER </span> 
+                    <div className = 'summitPoster--container4'><span>13-14 NOVEMBER </span> 
                         <FontAwesomeIcon className = '' icon = 'dot-circle'/>
                         <span className = ''> WARSAW 2019 </span>
                     </div>
