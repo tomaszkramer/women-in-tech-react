@@ -35,6 +35,7 @@ class Navbar extends React.Component {
                                     <Link className ='dropdown-item' to ='/Dnp'>DZIEWCZYNY NA POLITECHNIKI</Link>
                                     <Link className = 'dropdown-item' to = '/Nt'>NOWE TECHNOLOGIE</Link>
                                     <Link className = 'dropdown-item' to = '/StartUp'>START UP</Link>
+                                    <Link className = 'dropdown-item' to = '/Summit'>SUMMIT</Link>
                                 </div>
                             </li>
                             <li className="nav-item">

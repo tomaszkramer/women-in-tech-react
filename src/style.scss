@@ -677,3 +677,47 @@ body {
         }
     }
 }
+.summitPoster {
+    &--container {
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 3rem;
+        font-size: 0.5rem;
+        max-width: 33em;
+        text-align: center;
+        color: white;
+        @media (min-width: 992px) {
+            font-size: 1rem;
+            max-width: 33em;
+        }
+    }
+    &--container2 {
+        position: relative;
+        line-height: 3em;
+        width: 100%;
+        text-align: left;
+    }
+    &--container3 {
+        position: relative;
+        line-height: 3em;
+    }
+    &--span1 {
+        font-size: 5em;
+    }
+    &--span2 {
+        font-size: 2em;
+    }
+    &--span3 {
+        position: absolute;
+        top: 0;
+        font-size: 2rem;
+        line-height: 0;
+    }
+    &--span4 {
+        margin-left: 4rem;
+        font-size: 7em;
+        font-weight: bold;
+        color: #f8951d;
+    }
+}

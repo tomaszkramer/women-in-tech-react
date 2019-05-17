@@ -16,6 +16,7 @@ import Dnp from './subsites/Dnp';
 import Nt from './subsites/Nt';
 import StartUp from './subsites/StartUp';
 import Overview from './subsites/Overview';
+import Summit from './subsites/Summit';
 
 class App extends React.Component {
     render() {
@@ -28,6 +29,7 @@ class App extends React.Component {
                 <Route path = '/Nt' component = {Nt} />
                 <Route path = '/StartUp' component = {StartUp} />
                 <Route path = '/Overview' component = {Overview} />
+                <Route path = '/Summit' component = {Summit} />
                 <BottomBar/>
         </HashRouter>
     }

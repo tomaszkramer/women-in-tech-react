@@ -30,19 +30,19 @@ class StartUp extends React.Component {
                     />
                 </div>
                 <section>
-                <CircleBar
-                        number1 = '12' text1 = 'lat' boxShadow1 = '#d0108a' color1 = '#d0108a' textColor1 = '#23576c' fontSize1 = '1.3rem'
-                        number2 = '107000' text2 = 'absolwentów' boxShadow2 = '#fc7dcc' color2 = '#d0108a' textColor2 = '#23576c' fontSize2 = '1.3rem'
-                        number3 = '12' text3 = 'uczelni technicznych' boxShadow3 = '#d0108a' color3 = '#d0108a' textColor3 = '#23576c' fontSize3 = '1.3rem'
-                        number4 = '340' text4 = 'uczestniczek biegu w kasku' boxShadow4 = '#fc7dcc' color4 = '#d0108a' textColor4 = '#23576c' fontSize4 = '1.3rem'
-                    />
+                    <CircleBar
+                            number1 = '12' text1 = 'lat' boxShadow1 = '#d0108a' color1 = '#d0108a' textColor1 = '#23576c' fontSize1 = '1.3rem'
+                            number2 = '107000' text2 = 'absolwentów' boxShadow2 = '#fc7dcc' color2 = '#d0108a' textColor2 = '#23576c' fontSize2 = '1.3rem'
+                            number3 = '12' text3 = 'uczelni technicznych' boxShadow3 = '#d0108a' color3 = '#d0108a' textColor3 = '#23576c' fontSize3 = '1.3rem'
+                            number4 = '340' text4 = 'uczestniczek biegu w kasku' boxShadow4 = '#fc7dcc' color4 = '#d0108a' textColor4 = '#23576c' fontSize4 = '1.3rem'
+                        />
                 </section>
                 <section className = 'container'>
-                <Article48
-                        art = {articles[0].itforshe}
-                        src = 'startup/logo-start-up.png'
-                        className = 'row'
-                    />
+                    <Article48
+                            art = {articles[0].itforshe}
+                            src = 'startup/logo-start-up.png'
+                            className = 'row'
+                        />
                 </section>
                 <section>
                     <ChartJs 
