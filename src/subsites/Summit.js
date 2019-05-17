@@ -3,7 +3,14 @@ import MainWallpapaer from '../MainWallpaper';
 import CircleBar from '../CircleBar';
 import Article48 from '../Article48';
 import SummitPoster from '../SummitPoster';
+import ArticleFrameRight from '../ArticleFrameRight';
+import ArticleFrameLeft from '../ArticleFrameLeft';
+import ArticleRight from '../ArticleRight';
+import SectionName from '../SectionName';
+import Partners from '../Partners';
 import {articles} from '../articles.json';
+import SummitPartners from '../SummitPartners';
+import NtPartners from '../NtPartners';
 
 class Summit extends React.Component {
     constructor(props) {
@@ -40,6 +47,44 @@ class Summit extends React.Component {
                 </section>
                 <section>
                     <SummitPoster/>
+                </section>
+                <section>
+                    <div className = 'videoWrapper my-4'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WlpT94VglUA" title ="summit" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                </section>
+                <section className = 'container'>
+                <ArticleFrameRight
+                    art = {articles[0].program_mentoringowy}
+                    srcImg = 'summit/summit-fot2.png'
+                    srcFrame = 'summit/summit-trapez1.png'
+                    classArticleContainer = 'mx-2'
+                    classColRight = 'col-12 col-lg-5 px-0 d-flex flex-column justify-content-center'
+                    classColLeft = 'col-12 col-lg-7 px-0 position-relative'
+                    classImgFrame = 'articleFrameRight--frame'
+                    />
+                    <ArticleFrameLeft
+                        art = {articles[0].program_mentoringowy}
+                        srcImg = 'summit/summit-fot3.png'
+                        srcFrame = 'summit/summit-trapez2.png'
+                        classArticleContainer = 'text-right mx-2'
+                        classColRight = 'col-12 col-lg-7 px-0 position-relative'
+                        classColLeft = 'col-12 col-lg-5 px-0 d-flex flex-column justify-content-center'
+                        classImgFrame = 'articleFrameLeft--frame'
+                    />
+                </section>
+                <section>
+                <ArticleRight
+                    src = 'summit/summit-fot4.png'
+                    art = {articles[0].article3}
+                    className = 'row mx-0 article__right--frame'
+                   />
+                </section>
+                <section>
+                    <SectionName name = 'OUR PARTNERS'/>
+                    <Partners data = {SummitPartners}
+                              logoWidth = '200px'  
+                    />
                 </section>
             </div>
         )
