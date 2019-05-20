@@ -7,6 +7,7 @@ class ArticleRight extends React.Component {
             imgPath: './img/subsites/',
             art: '',
             article: [],
+            id: '',
             className: this.props.className,
             style: {
                 borderBottom: "1px solid lightgrey"
@@ -22,17 +23,22 @@ class ArticleRight extends React.Component {
     
     componentDidMount(){
         
-        let myArt = []
+        let myArt = [];
+        let myId;
         let myArticle = this.state.art;
         
         for(let par in myArticle){
-                myArt.push(myArticle[par])  
+            if(par !== "id"){
+                myArt.push(myArticle[par])
+            } else {
+                myId = myArticle[par]
+            }
         }
         
         this.setState({
             article: myArt,
+            id: myId,
         })
-       
     }
  
     render() {
@@ -46,7 +52,7 @@ class ArticleRight extends React.Component {
                     <div className = 'article__right--article' style = {{width: this.props.articleWidth}}>
                         <h4>{this.state.art.title}</h4>
                         {this.state.article.map(el=>{
-                            return <p className = 'px-2'>{el}</p>
+                            return <p className = 'px-2' key = {el}>{el}</p>
                         })}
                     </div>
                 </div>

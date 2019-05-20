@@ -9,6 +9,7 @@ class Article extends React.Component {
             art: '',
             title: '',
             article: [],
+            id: '',
             className: this.props.className
         }
     }
@@ -23,21 +24,25 @@ class Article extends React.Component {
         
         let myArt = []
         let myTitle;
+        let myId;
         let myArticle = this.state.art;
         for(let par in myArticle){
-            if(par !== "title"){
+            if(par !== "title" && par !== 'id'){
                 myArt.push(myArticle[par])
-            } else {
+            } else if (par === "title"){
                 myTitle = myArticle[par]
+            } else if (par === "id") {
+                myId = myArticle[par]
             }
         }
         
         this.setState({
             article: myArt,
-            title: myTitle
+            title: myTitle,
+            id: myId,
         })
     }
-    
+
     render() {
         return (
             <div>
@@ -46,9 +51,9 @@ class Article extends React.Component {
                    <img className = 'img-fluid article--img' src = {require(`${this.state.imgPath}${this.props.src}`)} alt = ''></img>
                 </div>
                 <div className = 'mt-3'>
-                   <p className = 'article--title'>{this.state.title}</p>
+                   <p className = 'article--title' key = {this.state.id}>{this.state.title}</p>
                    {this.state.article.map(el=>{
-                       return <p>{el}</p>
+                       return <p key ={this.state.id}>{el}</p>
                    })}
                 </div>
             </div>

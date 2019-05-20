@@ -1,43 +1,52 @@
  {
      "articles": [{
         "article1": {
+            "id" : "1",
             "par1" : "Jako Fundacja edukacyjna perpsketywy od ponad 20 lat pomagamy młodym ludziom w podjęciu najważniejszych życiowych decyzji, takich jak wybór zawodu, szkoły i uczelni.",
             "par2" : "Od 13 lat wspieramy dziewczyny w wyborze kierunków technicznych i ścisłych w ramach akcji Dziewczyny na politechniki! i Dziewczyny do ścisłych!. Prowadzimy też szereg działań inspiracyjnych dla młodych kobiet w technologiach i nauce: IT for SHE, Lean in STEM, Girls go start-up! Academy, Dziewczyny do nauki!, a także program stypendialny dla studentek informatyki: 'Nowe technologie dla dziewczyn'. Jesteśmy również organizatorami Perspektywy Women in Tech Summit - największego wydarzenia dla kobiet w technologiach w tej części świata."
         },
         "article2" : {
+            "id" : "2",
             "title" : "OGÓLNOPOLSKI DZIEŃ OTWARTY DLA DZIEWCZYN 2019",
             "par1" : "11 kwietnia politechniki i wydziały ścisłe uniwersytetów stały się centrum inspirowania młodych kobiet w Polsce! Według raportu „Potencjał kobiet dla branży technologicznej” (Siemens, Perspektywy 2015) aż 25% maturzystek było aktywnie zniechęcanych do wyboru kierunków inżynierskich. Aby walczyć z tym negatywnym zjawiskiem już po raz dwunasty na uczelniach technicznych zostały zorganizowane dni otwarte dla dziewczyn. Politechniki i wydziały ścisłe uniwersytetów specjalnie dla uczennic ze szkół średnich zorganizowały przeróżne atrakcje, aby zachęcić je do wyboru uczelni technicznych i kierunków ścisłych. Była to dla nich niepowtarzalna okazja do zobaczenia jak wygląda studiowanie i praca inżynierek na co dzień."
         },
         "article3" : {
+            "id" : "3",
             "title" : "KONFERENCJA PRASOWA Z OKAZJI PUBLIKACJI RAPORTU „KOBIETY NA POLITECHNIKACH 2019”",
             "par1" : "Fundacja Edukacyjna Perspektywy już od 2008 roku w ramach akcji „Dziewczyny na Politechniki!” publikuje roczny raport dotyczący liczby kobiet na politechnikach. 15 marca w Przestrzeni from Facebook odbyła się konferencja prasowa z okazji premiery tegorocznej edycji „Kobiety na Politechnikach”. Zgromadziło się tam grono szanownych gości: prof. Janusz Walo – prorektor ds. studenckich Politechniki Warszawskiej, prof. Andrzej Kraśniewski z wydziału Elektroniki i Technik Informatycznych Politechniki Warszawskiej, dr hab. Dorota Mozyrska – prodziekan Wydziału Informatyki Politechniki Białostockiej oraz Jarek Kuśmierek – Senior Engineering Manager z Google."
 
         },
         "article4" : {
+            "id" : "4",
             "title" : "NAGRODA",
             "par1" : "W grudniu 2017 w Brukseli Mariya Gabriel, komisarz UE ds. gospodarki i społeczeństwa cyfrowego wręczyła nagrody European Digital Skills Award 2017. Program &quot;IT for SHE &quot; zwyciężył w kategorii działań na rzecz umiejętności cyfrowych kobiet. O nagrodę ubiegało się 247 projektów z 27 krajów UE. &quot;Nagroda w kategorii Kobiet w IT została wręczona po raz pierwszy. Jej celem jest uznanie dla osiągnięć i potencjału niezwykłych, odważnych młodych kobiet i dziewcząt. Gratuluję serdecznie &quot;IT for SHE&quot; i Fundacji Edukacyjnej Perspektywy. Mam nadzieję że Wasza energia i motywacja będą zarażać całą Europę!&quot; - powiedziała komisarz Gabriel. Uroczystość wręczenia nagród odbyła się w ramach konferencji &quot;Digital Skills and Job Coalition&quot;. Koalicja na Rzecz Pracy i Umiejętności Cyfrowych skupia 300 członków reprezentujących 100 instytucji europejskich, które prowadzą akcje angażujące miliony Europejczyków."
         },
         "bianka" : {
+            "id" : "5",
             "title" : "DR BIANKA SIWIŃSKA",
             "par1" : "CEO Perspektywy Women in Tech / CEO Fundacji Edukacyjnej Perspektywy",
             "par2" : "Dr Bianka Siwińska jest dziennikarką, naukowczynią i inicjatorką kampanii społecznych. Jest dyrektorem zarządzającym Fundacji Edukacyjnej Perspektywy, redaktor naczelną magazynu edukacyjnego „Perspektywy” oraz korespondentką „University World News”.",
             "par3" : "Dr Siwińska jest inicjatorką kampanii społecznej „Dziewczyny na politechniki” i Akademii Startupowej dla studentek kierunków technicznych i ścisłych oraz takich projektów jak „Lean in STEM”, „IT for SHE”. „Dziewczyny do nauki!” i stypendiów dla studentek politechnik „Nowe technologie dla dziewczyn” (z Intel)."
         },
         "itforshe" : {
+            "id" : "6",
             "title" : "",
             "par1" : "Tylko 13% studentów informatyki w Polsce to kobiety. w korporacjach technologicznych jest ich jeszcze mniej. Niedobór specjalistów z zakresu nowych technologii już teraz szacuje się w Polsce na 50 000, a w Europie, do roku 2020 niedobór ten wyniesie 1 milion. Wprowadzenie większej liczby kobiet na rynek pracy w informatyce może powiększyć europejski PKB o 9 miliardów Euro rocznie.",
             "par2" : "IT for SHE to program dla dziewczyn pełnych pasji dla technologii, programowania i informatyki. Został uznany za najlepsze działanie dla kobiet w technologiach w Europie i otrzymał od Komisji Europejskiej European Digital Skills Awards. Składa sie on z trzech filarów:"
         },
 
         "program_mentoringowy" : {
+            "id" : "7",
             "title" : "",
             "par1" : "W jego ramach zapraszamy studentki kierunków informatycznych do aplikownia, by znaleźć się pod opieką mentorki lub mentora z czołowych firm technologicznych. We współpracy z nimi będziecie rozwijać swój potencjał, wiedzę z zakresu programowania i zarządzania, a także realizować ambitne projekty technologiczne. Dostępni są mentorzy z takich firm jak: Citi, Google, Facebook, Intel, Ericsson, Goldman Sachs, P&G, RBS i Tomtom. "
         },
         "it_tech_camp" : {
+            "id" : "8",
             "title" : "",
             "par1" : "Women in Tech Camp to obóz dla najzdolniejszych studentek informatyki z polskich uczelni technicznych. W tym roku odbędzie się już czwarta edycja największego w Europie obozu tematycznego dla dziewczyn w IT. Dla studentek jest to niezwykła okazja do zgłębienia tajników zaawansowanego programowania, spotkania wybitnych mentorów i mentorek oraz zaplanowania kariery profesjonalnej i ścieżki rozwoju osobistego w branży technologicznej. Dziewczyny stworzą też network inspiracji i wzajemnego wsparcia, który stanowić będzie fundament dla ruchu wybitnych kobiet w IT. Do aplikowania na Women in Tech Camp zapraszamy dziewczyny, które chcą tworzyć przyszłość nowych technologii! :) Udział w obozie jest bezpłatny."
         },
         "program_wolontariacki" : {
+            "id" : "9",
             "title" : "",
             "par1" : "IT for SHE to program wolontariatu, w ramach którego aktywne studentki kierunków informatycznych pojadą w lato do małych miejscowości i uczyć tam będą w szkołach - programowania i wiedzy technologicznej. Jego celem jest zwiększenie zainteresowania obszarem STEM (Science, Technology, Engineering, Mathematics) wśród dzieci, promowanie kobiet w roli ekspertek technologicznych i uruchamianie ich potencjału społecznego. Razem rozbudzimy miłość do nowych technologii!"
         }
