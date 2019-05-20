@@ -16,7 +16,6 @@ class Slide extends React.Component {
     }
 
     render () {
-        console.log(this.props.link)
         return (
             <div>
                 <div>
